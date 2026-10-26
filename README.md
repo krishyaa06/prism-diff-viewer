@@ -80,6 +80,7 @@ prism-diff-viewer/
 │   └── core.test.js
 ├── .gitignore
 ├── LICENSE
+├── README.md
 ├── index.html
 └── package.json
 ```
