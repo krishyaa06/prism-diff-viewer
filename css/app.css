@@ -1,0 +1,15 @@
+.inputs textarea{min-height:200px}.name{max-width:260px;padding:7px 10px!important;font-size:13px!important}
+.result{margin-top:16px}
+.diff{border:1px solid var(--line);border-radius:12px;overflow:auto;background:#05070d;font:13px/1.6 var(--mono);max-height:620px}
+.diff table{width:100%;border-collapse:collapse;table-layout:fixed}
+.diff td{padding:0 10px;white-space:pre-wrap;word-break:break-word;vertical-align:top}
+.diff td.n{width:46px;color:var(--faint);text-align:right;user-select:none;border-right:1px solid var(--line);padding-right:8px}
+.diff td.s{width:18px;color:var(--faint);user-select:none;padding:0 0 0 6px}
+.diff .del{background:#ff6b8a14}.diff .ins{background:#3ee69a12}
+.diff .del .s,.diff .del .n{color:var(--bad)}.diff .ins .s,.diff .ins .n{color:var(--ok)}
+.diff del{background:#ff6b8a40;color:#ffd0da;text-decoration:none;border-radius:3px}.diff ins{background:#3ee69a38;color:#c9ffe5;text-decoration:none;border-radius:3px}
+.diff .empty-cell{background:repeating-linear-gradient(-45deg,#ffffff03 0 6px,#ffffff08 6px 12px)}
+.diff .sep td{border-left:1px solid var(--line)}
+.diff pre{margin:0;padding:14px;white-space:pre-wrap}.diff pre .a{color:var(--ok)}.diff pre .d{color:var(--bad)}.diff pre .h{color:var(--accent)}
+.same{padding:30px;text-align:center;color:var(--ok)}
+@media (max-width:860px){.diff td.n{width:32px}}

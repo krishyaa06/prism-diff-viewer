@@ -1,0 +1,13 @@
+    <section class="grid g2 inputs">
+      <div class="card"><div class="card-title"><input id="nameA" class="code name" value="original.js" aria-label="Left file name" /><label class="btn small" for="fa">Open</label><input type="file" id="fa" hidden /></div><textarea id="a" spellcheck="false" aria-label="Original text"></textarea></div>
+      <div class="card"><div class="card-title"><input id="nameB" class="code name" value="changed.js" aria-label="Right file name" /><label class="btn small" for="fb">Open</label><input type="file" id="fb" hidden /></div><textarea id="b" spellcheck="false" aria-label="Changed text"></textarea></div>
+    </section>
+    <section class="card result">
+      <div class="card-title">
+        <div class="row"><div class="tabs" id="view"><button class="on" data-v="split">Split</button><button data-v="unified">Unified</button><button data-v="patch">Patch</button></div>
+          <span class="pill ok" id="add"></span><span class="pill bad" id="del"></span></div>
+        <div class="row"><label class="check"><input type="checkbox" id="ws" /> Ignore whitespace</label><label class="check"><input type="checkbox" id="case" /> Ignore case</label>
+          <button class="btn small" id="swap">Swap</button><button class="btn small primary" id="copy">Copy patch</button></div>
+      </div>
+      <div id="diff" class="diff"></div>
+    </section>

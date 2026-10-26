@@ -1,0 +1,30 @@
+{
+  "name": "prism-diff-viewer",
+  "version": "1.0.0",
+  "description": "Side-by-side and unified text diff with word-level highlights and unified patch export (Myers algorithm).",
+  "scripts": {
+    "test": "node --test",
+    "start": "npx --yes serve ."
+  },
+  "keywords": [
+    "diff",
+    "text-diff",
+    "diff-viewer",
+    "myers-diff",
+    "patch",
+    "developer-tools",
+    "code-review",
+    "vanilla-js",
+    "prism-protocol"
+  ],
+  "author": "Soumya Bhandare (krishyaa06)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krishyaa06/prism-diff-viewer.git"
+  },
+  "homepage": "https://krishyaa06.github.io/prism-diff-viewer/",
+  "engines": {
+    "node": ">=18.17"
+  }
+}

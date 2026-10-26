@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prism Diff Viewer · Prism Protocol</title>
+  <meta name="description" content="Side-by-side and unified text diff with word-level highlights and unified patch export (Myers algorithm)." />
+  <meta name="theme-color" content="#07080f" />
+  <meta property="og:title" content="Prism Diff Viewer · Prism Protocol" />
+  <meta property="og:description" content="Side-by-side and unified text diff with word-level highlights and unified patch export (Myers algorithm)." />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/prism.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <style>:root{--accent:#3EE69A;--accent-2:#FF6B8A}</style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./"><span class="mark">◇</span><b>PRISM</b><span>Diff Viewer</span></a>
+    <nav>
+      <a class="btn small" href="https://github.com/krishyaa06/prism-diff-viewer" target="_blank" rel="noreferrer">★ GitHub</a>
+    </nav>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">🔀 Dev Tools</p>
+      <h1>Compare text, <em>see every change.</em></h1>
+      <p class="lead">Paste two versions and get a GitHub-style split or unified diff with word-level highlights and a ready-to-apply patch.</p>
+    </section>
+    <section class="grid g2 inputs">
+      <div class="card"><div class="card-title"><input id="nameA" class="code name" value="original.js" aria-label="Left file name" /><label class="btn small" for="fa">Open</label><input type="file" id="fa" hidden /></div><textarea id="a" spellcheck="false" aria-label="Original text"></textarea></div>
+      <div class="card"><div class="card-title"><input id="nameB" class="code name" value="changed.js" aria-label="Right file name" /><label class="btn small" for="fb">Open</label><input type="file" id="fb" hidden /></div><textarea id="b" spellcheck="false" aria-label="Changed text"></textarea></div>
+    </section>
+    <section class="card result">
+      <div class="card-title">
+        <div class="row"><div class="tabs" id="view"><button class="on" data-v="split">Split</button><button data-v="unified">Unified</button><button data-v="patch">Patch</button></div>
+          <span class="pill ok" id="add"></span><span class="pill bad" id="del"></span></div>
+        <div class="row"><label class="check"><input type="checkbox" id="ws" /> Ignore whitespace</label><label class="check"><input type="checkbox" id="case" /> Ignore case</label>
+          <button class="btn small" id="swap">Swap</button><button class="btn small primary" id="copy">Copy patch</button></div>
+      </div>
+      <div id="diff" class="diff"></div>
+    </section>
+
+  </main>
+  <footer class="foot">
+    <span>◇ Prism Diff Viewer · Part of <a href="https://dc.gg/prismprotocol" target="_blank" rel="noreferrer">Prism Protocol</a></span>
+    <span><a href="https://github.com/krishyaa06/prism-diff-viewer" target="_blank" rel="noreferrer">Source</a> · MIT License · Runs 100% in your browser</span>
+  </footer>
+  <script src="js/prism.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
